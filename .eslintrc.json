@@ -5,7 +5,8 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:react/jsx-runtime"
     ],
     "overrides": [
     ],
@@ -16,7 +17,7 @@
 
     },
     "plugins": [
-        "react"
+        "react"       
     ],
     "ignorePatterns": "webpack.config.js",
     "rules": {
@@ -28,5 +29,16 @@
         "indent": ["warn", 2],
         "comma-dangle": ["warn", "always-multiline"],
         "semi": ["warn", "always"]
-    }
+    },
+
+    
+        "settings": {
+          "react": {
+            "version": "detect"
+          }
+        }
+        
+      
+      
 }
+
